@@ -3,8 +3,22 @@ using namespace std;
 
 int main()
 {
-  int num=12;
-  num=num-num+pow(num,2)/3;
-  cout<<"num after operations is "<<num<<endl;
+  //decalring a vector and reversing it
+  int n; cin>>n;
+  vector<int> v;
+  for(int i=0;i<n;i++)
+  {
+    int x; cin>>x;
+    v.push_back(x);
+  }
+  
+  //reverssing the vector
+  reverse(v.begin(),v.end());
+  
+  for(int i=0;i<n;i++)
+  {
+    cout<<v[i]<<" ";
+  }
+  
   return 0;
 }
